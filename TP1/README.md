@@ -162,11 +162,21 @@ document.getElementById("countdown").textContent = newText;
 
 > Pour changer la couleur du champ de texte, j'ai modifié la classe CSS de l'élément en fonction de la validité de la saisie de l'utilisateur
 
+## Réference code src
+
 #### Voir le Source Code du TP1 (js)
+> Lien de mon repository github (au passage abonnez-vous !!! )
 ```
 https://github.com/Akira98000/js.learning.courses
 ```
 #### Voir le démo du TP1 (js)
+> Lien de la démonstration de mon TP1 
 ```
 https://akira98000.github.io/js.learning.courses/TP1/
+```
+
+#### Mozilla Developer
+> Lien des documentations JS fiables
+```
+https://developer.mozilla.org/fr/
 ```
