@@ -1,9 +1,9 @@
-# Apprentissage JavaScript : TD1 (Questions / Réponses)
+# M413 - TD1 : Réponses aux Questions
 
 ## Partie 1.1 : "document.title"
 ### 1. Quel sera l’évènement qui déclenchera l’appelle de votre fonction ?
 
-L'événement qui déclenchera l'appel de la fonction defineHeading1() est l'événement de chargement complet de la fenêtre (window.onload). Cet événement se déclenche lorsque tous les éléments de la page Web ont été chargés.
+> L'événement qui déclenchera l'appel de la fonction defineHeading1() est l'événement de chargement complet de la fenêtre (window.onload). Cet événement se déclenche lorsque tous les éléments de la page Web ont été chargés.
 
 
 ### 2. Quelle méthode avez-vous utilisée pour récupérer l’objet représentant votre balise `<h1>` ?
@@ -89,11 +89,51 @@ function dateAlter() {
 ```
 var lastAuthor = authors[authors.length - 1];
             
-            var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-            var formattedDate = lastModifiedDate.toLocaleDateString("fr-FR", options);
+var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+var formattedDate = lastModifiedDate.toLocaleDateString("fr-FR", options);
             
-            var authorText = lastAuthor ? lastAuthor.getAttribute("content") : "Auteur inconnu";
-            
-            var newText = "Dernière modification : le " + formattedDate + " par " + authorText;
+var authorText = lastAuthor ? lastAuthor.getAttribute("content") : "Auteur inconnu";
+
+var newText = "Dernière modification : le " + formattedDate + " par " + authorText;
             updateDateDiv.textContent = newText;
+```
+
+## Partie 7 : l'objet Date
+
+### 1. Comment obtenez-vous le nombre de jours ?
+
+#### Calcul de la Différence de Temps
+> Tout d'abord, vous devez calculer la différence de temps (en millisecondes) entre la date cible et la date actuelle. Utilisez l'objet Date de JavaScript pour cela.
+```
+const today = new Date();
+const currentYear = today.getFullYear();
+const targetDate = new Date(`July 19, ${currentYear}`);
+const timeDiff = targetDate - today;
+```
+### 2. Comment faites-vous la mise à jour du texte ?
+
+#### Conversion en Jours
+> convertir cette différence de temps en jours. Une journée est équivalente à 24 heures, chaque heure ayant 60 minutes, chaque minute ayant 60 secondes, et chaque seconde ayant 1000 millisecondes.
+
+```
+let daysDiff = timeDiff / (1000 * 60 * 60 * 24);
+daysDiff = Math.ceil(daysDiff); // Arrondir au nombre entier supérieur pour obtenir le nombre total de jours restants
+
+```
+
+### 2. Comment faites-vous la mise à jour du texte ?
+
+#### Création d'une Chaîne de Caractères pour le Texte
+> Créez la chaîne de caractères que vous souhaitez afficher, en intégrant le nombre de jours calculés. Gérez également le singulier ou le pluriel de "jour".
+
+```
+const dayWord = daysDiff === 1 ? "jour" : "jours"; // Singulier ou pluriel
+const newText = `Il reste ${daysDiff} ${dayWord} avant le 19 juillet ${currentYear}.`;
+```
+
+#### Mise à Jour de l'Élément HTML
+> Utilisez la propriété textContent (ou innerText, selon le cas) de l'élément HTML que vous souhaitez mettre à jour avec le nouveau texte.
+
+```
+document.getElementById("countdown").textContent = newText;
 ```
