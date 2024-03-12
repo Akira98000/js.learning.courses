@@ -158,6 +158,6 @@ document.getElementById("countdown").textContent = newText;
 
 > J'ai utilisé l'événement keyup pour détecter chaque fois qu'une touche est relâchée après avoir été pressée dans le champ de texte. Cet événement permet de réagir en temps réel à la saisie de l'utilisateur, en vérifiant et en répondant à chaque modification apportée au contenu du champ.
 
-## Comment avez-vous fait changer la couleur du champ texte ?
+### Comment avez-vous fait changer la couleur du champ texte ?
 
 > Pour changer la couleur du champ de texte, j'ai modifié la classe CSS de l'élément en fonction de la validité de la saisie de l'utilisateur
