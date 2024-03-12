@@ -1,4 +1,4 @@
-# M413 - TD1 : Réponses aux Questions
+# Apprentissage JavaScript : TD1 (Questions / Réponses)
 
 ## Partie 1.1 : "document.title"
 ### 1. Quel sera l’évènement qui déclenchera l’appelle de votre fonction ?
