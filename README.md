@@ -161,3 +161,12 @@ document.getElementById("countdown").textContent = newText;
 ### Comment avez-vous fait changer la couleur du champ texte ?
 
 > Pour changer la couleur du champ de texte, j'ai modifié la classe CSS de l'élément en fonction de la validité de la saisie de l'utilisateur
+
+#### Voir le Source Code du TP1 (js)
+```
+https://github.com/Akira98000/js.learning.courses
+```
+#### Voir le démo du TP1 (js)
+```
+https://akira98000.github.io/js.learning.courses/TP1/
+```
