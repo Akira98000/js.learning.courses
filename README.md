@@ -1,5 +1,6 @@
 # M413 - TD1 : Réponses aux Questions
 
+## Partie 1.1 : "document.title"
 ### 1. Quel sera l’évènement qui déclenchera l’appelle de votre fonction ?
 
 L'événement qui déclenchera l'appel de la fonction defineHeading1() est l'événement de chargement complet de la fenêtre (window.onload). Cet événement se déclenche lorsque tous les éléments de la page Web ont été chargés.
@@ -44,7 +45,7 @@ if (nombre % 2 === 0) {
 }
 ```
 
-## PARTIE 6.2 
+## Partie 6.2 : Les propriétés innerHTML, innerText et textContent
 
 ### 1. Quelles différences existe-t-il entre les 3 propriétés innerHTML, innerText et textContent ?
 
@@ -64,7 +65,7 @@ if (nombre % 2 === 0) {
 > Lorsque vous utilisez textContent pour définir le contenu d'un élément, vous pouvez affecter uniquement du texte sans balisage HTML, mais cela remplacera également tout le contenu existant, y compris les balises et les nœuds de texte descendants.
 
 
-## PARTIE 6.3 
+## Partie 6.3 : La propriété document.lastModified
 ### 1. Comment modifier votre code pour qu’il permette de sélectionner le 1er auteur de la liste ?
 
 ```
