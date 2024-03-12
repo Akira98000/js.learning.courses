@@ -162,4 +162,3 @@ document.getElementById("countdown").textContent = newText;
 
 > Pour changer la couleur du champ de texte, j'ai modifié la classe CSS de l'élément en fonction de la validité de la saisie de l'utilisateur
 
-## Partie 8.2 Menu déroulant
