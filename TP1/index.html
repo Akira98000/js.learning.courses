@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="Your Lastname and Firstname" />
+		<title>TD1 - JS</title>
+		<!-- META-->
+		<meta name="author" content="M.ACUNDEGER - PROFESSEUR JS">
+		<meta name="author" content="AKIRA SANTHAKUMARAN - ETUDIANT">
+		<meta name="keywords" content="Réalisation pratique JS">
+		<meta name="description" content="TP1">
+		<!-- LINK -->
+		<link href="assets/favicon.ico" rel="icon" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="css/td1.css" />
+		<script defer="defer" src="js/td1.js"></script>
+
+	</head>
+	<body onload="onLoad();">
+		<h1 class="firstOrLast" id="title">Ceci est un titre de niveau 1</h1>
+		<h2>Ceci est un sous-titre de niveau 2</h2>
+		<h2 class="firstOrLast">Un autre sous-titre de niveau 2</h2>
+		<h3 class="firstOrLast">Voici un titre de niveau 3</h3>
+		<h3>Un autre titre de niveau 3</h3>
+		<h3>Encore un titre de niveau 3</h3>
+		<p>Ceci est un paragraphe de texte.</p>
+		<p>Voici un autre paragraphe de texte.</p>
+		<ul>
+			<li>Élément de liste 1</li>
+			<li>Élément de liste 2</li>
+			<li>Élément de liste 3</li>
+		</ul>
+		<div>
+			<p id="firstParagraph">Ceci est un <span>texte</span> de la première balise p.</p>
+		</div>
+		<div>
+			<p id="secondParagraph">Ceci est un <span>autre texte</span> pour la deuxième balise p.</p>
+		</div>
+		<br>
+		<button onclick="swapInnerHTML()">Échanger le contenu des balises p</button>
+		<br>
+		<div id="update-date"></div>
+		<br>
+		<p id="countdown">Cliquez ici pour savoir combien de jours restent avant le 19 juillet.</p>
+		<br>
+		<p id="clock">Chargement de l'heure...</p>
+		<br>
+		<div id="graphic-clock">Chargement de l'horloge...</div>
+		<br>
+		<form>
+			<p>Saisir un nombre pour que ca soit vert et un str pour rouge : </p>
+			<input type="text" id="numberInput" class="white">
+		</form>
+		<aside>
+			<div class="menu-item">
+				<span class="menu-title">Menu 1</span>
+				<div class="submenu" style="display: none;">
+					<p>Submenu Item 1</p>
+					<p>Submenu Item 2</p>
+				</div>
+			</div>
+			<div class="menu-item">
+				<span class="menu-title">Menu 2</span>
+				<div class="submenu" style="display: none;">
+					<p>Submenu Item 1</p>
+					<p>Submenu Item 2</p>
+				</div>
+			</div>
+		</aside>
+		<p>
+			<input type="text" id="searchInput" placeholder="Recherche...">
+			<button id="searchBtn">Rechercher</button>
+		</p>
+		<p>
+			<input type="text" id="interactiveSearchInput" placeholder="Recherche interactive...">
+		</p>
+		
+		<script src="js/td1.js"></script>
+	</body>
+</html>

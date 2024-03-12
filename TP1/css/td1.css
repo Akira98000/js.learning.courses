@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2, h3 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+ul {
+    margin-bottom: 20px;
+    list-style-type: none;
+}
+
+.white { 
+    background-color: rgb(255,255,255);
+} 
+
+.green { 
+    background-color: rgb(150,255,150);
+} 
+
+.red { 
+    background-color: rgb(255,150,150);
+}
+
+
+li {
+    background-color: #ddd;
+    margin: 5px;
+    padding: 10px;
+}
+
+.firstOrLast {
+    font-weight: bold;
+    color: darkcyan;
+}
+
+button, input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+button {
+    background-color: darkcyan;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.white {
+    background-color: #fff;
+}
+
+.green {
+    background-color: #caffca;
+}
+
+.red {
+    background-color: #ffcccc;
+}
+
+aside {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.menu-item {
+    margin-bottom: 10px;
+}
+
+.menu-title {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.submenu p {
+    padding-left: 20px;
+}
+
+.select {
+    background-color: yellow;
+}
