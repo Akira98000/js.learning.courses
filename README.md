@@ -137,3 +137,27 @@ const newText = `Il reste ${daysDiff} ${dayWord} avant le 19 juillet ${currentYe
 ```
 document.getElementById("countdown").textContent = newText;
 ```
+
+## Partie 7.1 : SetInterval() et SetTimeout()
+
+### 1. Laquelle des deux méthodes de l’objet window avez-vous utilisé ? Pourquoi ?
+
+#### SetInverval()
+> setInterval() est utilisée pour exécuter une fonction ou un fragment de code à des intervalles réguliers, définis en millisecondes.
+
+> Cette méthode est simple et directe pour des cas d'utilisation où vous voulez que quelque chose se produise à un rythme régulier, comme rafraîchir une horloge chaque seconde. Elle est idéale pour des tâches périodiques et régulières.
+
+#### SetTimeOut()
+> setTimeout() permet de retarder l'exécution d'une fonction ou d'un fragment de code une seule fois, après un délai spécifié 
+
+>  L'approche avec setTimeout() offre plus de flexibilité. Par exemple, elle peut être utile si l'intervalle entre les mises à jour doit potentiellement changer ou si vous avez besoin d'une précision accrue. La récursivité de setTimeout() permet d'éviter certains écueils de setInterval(), comme l'empilement d'appels non exécutés si le thread est occupé
+
+#### Réponse pertinante : SetInterval() est beaucoup mieux dans ce cas
+
+## Partie 8.1 Champ Texte et Couleur d'arrière-plan
+
+> J'ai utilisé l'événement keyup pour détecter chaque fois qu'une touche est relâchée après avoir été pressée dans le champ de texte. Cet événement permet de réagir en temps réel à la saisie de l'utilisateur, en vérifiant et en répondant à chaque modification apportée au contenu du champ.
+
+## Comment avez-vous fait changer la couleur du champ texte ?
+
+> Pour changer la couleur du champ de texte, j'ai modifié la classe CSS de l'élément en fonction de la validité de la saisie de l'utilisateur
