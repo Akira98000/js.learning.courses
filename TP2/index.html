@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="author" content="Jean-Michel Bruneau - UCA - IUT - INFO" />
+<title>M413 - TD 2</title>
+<link href="assets/favicon.ico" rel="icon" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="css/td2.css" />
+<script defer="defer" src="js/td2.js"></script>
+</head>
+<body>
+	<h1 id="title">Titre principal</h1>
+	<div class="background-red">
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+	<ul>
+		<li>Element 1</li>
+		<li>Element 2</li>
+		<li>Element 3</li>
+	</ul>
+	</div>
+	<div id="insert-div">
+		<select id="insert-type" name="type">
+			  <option value="div">div</option>
+			  <option value="p">p</option>
+			  <option value="span">span</option>
+   </select>
+   	<input type="text" id="insert-text" value="My New Text Element">
+	<input type="text" id="interactiveSearchInput" placeholder="Recherche">
+	<button onclick="interactiveSearch()">Rechercher</button>
+	</div>
+	<div>
+		Proin ornare nunc sodales <span>ornare</span> lorem rhoncus ornare fringilla
+	</div>
+	<div>
+		Proin ornare nunc sodales or<span>nare</span> lorem rhoncus ornare fringilla
+	</div>
+	<div>
+		Proin ornare nunc sodales ornare lorem rhoncus ornare fringilla
+	</div>
+	<script src="js/td2.js"></script>
+</body>
+</html>
